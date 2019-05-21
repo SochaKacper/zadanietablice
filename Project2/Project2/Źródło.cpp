@@ -1,17 +1,18 @@
 #include <iostream>
-#include <string>
+#define ROZMIAR_TABLICY 100
 using namespace std;
-#define N 100
+char tab[ROZMIAR_TABLICY];
 
-void pierwsza()
+void Pierwsza_i_ostatnia()
 {
-
+	cout << "podaj s³owo które ma max 100 znaków " << endl;
+	cin >> tab;
+	cout << "pierwszy wyraz to " << tab[0];
+	cout << "ostatni wyraz to " << tab[strlen(tab) - 1];
 }
 
 int main()
 {
-	cout << "Podaj wyraz: ";
-	string a; cin >> a;
-	
+	Pierwsza_i_ostatnia();
+	return 0;
 }
-
